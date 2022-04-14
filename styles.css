@@ -17,7 +17,6 @@
 
 .div2{
     display: grid;
-    display: grid;
     grid-template-columns: 400px 400px;
     grid-template-rows: 300px 50px;
     column-gap: 10px;
@@ -32,6 +31,27 @@ footer{
 }
 
 .imagemProdutosMercado{
-    height: 10%;
-    width: 10%;
+    height: 50%;
+    width: 50%;
+}
+
+.card-produtos{
+
+}
+
+.container-produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 400px) ;
+    grid-template-rows: repeat(4, 400px);
+    column-gap: 10px;
+    margin-top: 5%;
+}
+
+.container-restaurante{
+    display: grid;
+    grid-template-columns: repeat(3, 400px) ;
+    grid-template-rows: repeat(4, 400px);
+    column-gap: 10px;
+    margin-top: 5%;
+
 }
