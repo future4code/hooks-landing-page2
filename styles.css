@@ -1,12 +1,50 @@
-.imagem{
-    height: 100%;
-    width: 100%;
+* {
+    margin: opx auto;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    /* color: black; */
+}
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem{
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+#esc-mercado {
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 110px;
+    color: white;
+    font-size: 30px;
+}
+
+#esc-restaurante {
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 100px;
+    color: white;
+    font-size: 30px;
 }
 
 .imagem1{
     height: 100px;
-    width: 100%;
+}
+
+button {
+    color: white;
+    font-size: 10px;
+    background-color: #51260e;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border-color: #51260e;
 }
 
 .card-sessao-produtos{
@@ -15,17 +53,50 @@
     margin: 5px;
 }
 
-.div2{
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 300px 50px;
-    column-gap: 10px;
+.banners-principais{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 100px;
 }
+
+div h4 {
+    text-align: center;
+}
+
+
+#promocoes-geral {
+    margin-top: 100px;
+}
+
+.promocoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+}
+
+.promocoes p {
+    color: black;
+}
+
 .container-sessao-produtos{
     display: flex;
     flex-direction: row;
 }
+
+.informacoes {
+    text-align: center;
+}
+
+.informacoes input {
+    width: 400px;
+}
+
 footer{
+    margin-top: 100px;
     padding: 5px;
     text-align: center;
 }
