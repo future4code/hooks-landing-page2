@@ -1,90 +1,135 @@
 * {
-    margin: opx auto;
+    margin: 0px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
+/* CABEÇALHO*/
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 30px;
+    padding: 0px 20px;
+    height: 50px;
+    background-color: #4e3223;
 }
 
-.imagem{
+.icone-logo{
     height: 250px;
     border-radius: 20px;
-}
-
-#esc-mercado {
-    position: absolute;
-    margin-top: -220px;
-    margin-left: 110px;
-    color: white;
-    font-size: 30px;
-}
-
-#esc-restaurante {
-    position: absolute;
-    margin-top: -220px;
-    margin-left: 100px;
-    color: white;
-    font-size: 30px;
-}
-
-.imagem1{
-    height: 100px;
 }
 
 button {
     color: white;
     font-size: 10px;
-    background-color: #51260e;
+    background-color: #ad5323;
     border-radius: 5px;
     width: 100px;
     height: 30px;
     border-color: #51260e;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
-.card-sessao-produtos{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
+/*MAIN */
+
+.titulo{
+    padding: 20px;
+    text-align: center;
 }
 
 .banners-principais{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    text-align: center;
-    margin-top: 100px;
+    width: 100%;
+    height: 300px;
 }
 
-div h4 {
-    text-align: center;
-}
-
-
-#promocoes-geral {
-    margin-top: 100px;
-}
-
-.promocoes {
+.banners-principais a{
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+} 
+
+.esc-mercado-restaurante{
+    width: 100%;
+    height: 80%;
     text-align: center;
-    text-decoration: none;
+    position: relative;
+    border-radius: 10% ;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px black;
+
 }
 
-.promocoes p {
+.esc-mercado-restaurante:hover{
+    width: 102%;
+    height: 82%;
+}
+
+.esc-mercado-restaurante h3{
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   font-size: 1.5em;
+   color: white;
+}
+.img-banners-main{
+    width: 100%;
+    height: 100%;
+}
+
+.img-banners-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* promocões*/
+#promocoes-geral{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #4d2a18;
+    column-gap: 5px;
+    row-gap: 5px;   
+}
+
+.card-Promocao{
+    height: 200px;
+    background-color: #ad5323;
+}
+
+/* SESSÃO MERCADO*/
+.sessao-mercado {
+    width: 90%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.img-card-sessao-mercado{
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-card-sessao-mercado img{
+    width: 100%;
+}
+
+.card-sessao-produtos p {
     color: black;
+    margin-top:5px ;
 }
 
-.container-sessao-produtos{
-    display: flex;
-    flex-direction: row;
-}
+/*---------------*/
 
 .informacoes {
     text-align: center;
@@ -147,10 +192,3 @@ footer{
     margin-top: 5%;
 
 }
-
-h3 {
-    margin-left: 100px;
-    margin-top: 100px;
-    font-size: 30px;
-}
-
