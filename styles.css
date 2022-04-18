@@ -172,6 +172,7 @@ footer .fale-conosco {
 
 .redes-sociais img {
     opacity: 70%;
+    cursor: pointer;
 }
 
 .redes-sociais img:hover {
