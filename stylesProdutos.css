@@ -20,20 +20,24 @@ header {
     width: 100%;
 }
 
-header a{
-    color: white;
-    padding: 15px 30px;
-}
-
-header a:hover{
-    background-color: #9984787c;
-
-}
-
 .icone-logo{
     height: 250px;
     border-radius: 20px;
 }
+
+header .conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .conta p{
+    color: white;
+    font-weight: bold;
+    margin-right: 7px;
+}
+
 
 button {
     color: white;
@@ -47,12 +51,37 @@ button {
     font-size: 0.8em;
 }
 
-/*CONTAINER DE PRODUTOS*/
+nav{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 25px);
+    margin-top: 100px;
+    color: black;
+    background-color: #51260e;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+nav a{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a:hover{
+    background-color: #9984787c;
 
-#bebidas{
+}
+
+/*CONTAINER DE PRODUTOS*/
+#lanches{
     margin-top: 100px;
 }
 
+#bebidas{
+    margin-top: 190px;
+}
 .titulo{
     background-color: #ad5323 ;
     padding: 10px;
@@ -115,13 +144,24 @@ button {
 }
 
 
-    footer{
-        margin-top: 100px;
-        padding: 5px;
-        text-align: center;
-    }
+footer{
+    margin-top: 100px;
+    padding: 5px;
+    text-align: center;
+}
 
 @media (max-width:680px){
+    header .conta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .conta p{
+        font-size: 0.8rem;
+        margin: 7px;
+        font-weight: bold;
+    }
+    
     .container-produtos{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 350px) ;
@@ -130,4 +170,22 @@ button {
         padding: 10px;
     }
 
+}
+
+@media (max-width:480px){
+    header .conta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .conta p{
+        font-size: 0.8rem;
+        margin: 7px;
+        font-weight: bold;
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

@@ -26,3 +26,9 @@ h3 {
 a {
     color: black;
 }
+
+@media(max-width:380px){
+    form{
+        margin-left: 10px;
+    }
+}
