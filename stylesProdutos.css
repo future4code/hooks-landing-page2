@@ -53,7 +53,7 @@ button {
 
 nav{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 25px);
     margin-top: 100px;
     color: black;
@@ -62,12 +62,14 @@ nav{
     text-align: center;
     position: fixed;
     top: 0;
+    width: 100%;
 }
 nav a{
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 nav a:hover{
     background-color: #9984787c;

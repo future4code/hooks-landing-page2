@@ -145,6 +145,10 @@ footer .fale-conosco {
     font-size: 12px;
 }
 
+footer input{
+    background-color: white;
+}
+
 .redes-sociais img {
     opacity: 70%;
     cursor: pointer;
