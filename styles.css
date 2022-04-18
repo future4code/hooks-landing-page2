@@ -11,17 +11,17 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
-    height: 50px;
+    height: 100px;
     background-color: #4e3223;
 }
 
 header img {
-    width: 50px;
+    width: 290px;
     height: 50px;
 }
 
 .icone-logo{
-    height: 250px;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -99,6 +99,11 @@ button {
     background-color: #ad5323;
 }
 
+.card-Promocao img {
+    height: 100%;
+    width: 100%;
+}
+
 /* SESSÃO MERCADO*/
 .sessao-mercado {
     width: 90%;
@@ -147,4 +152,28 @@ button {
     .sessao-mercado {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #ad5323;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    line-height: 2.0;
+}
+
+footer .fale-conosco {
+    color: black;
+    font-size: 12px;
+}
+
+.redes-sociais img {
+    opacity: 70%;
+}
+
+.redes-sociais img:hover {
+    opacity: 100%;
 }

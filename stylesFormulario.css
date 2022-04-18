@@ -1,5 +1,6 @@
 form {
     margin-left: 100px;
+    margin-bottom: 15px;
     line-height: 25px;
 }
 
@@ -17,6 +18,8 @@ form label {
 }
 
 h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
