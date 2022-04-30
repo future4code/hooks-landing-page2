@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Food</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <link rel="stylesheet" type="text/css" href="./stylesFormulario.css"/>
+    <link rel="icon" type="image/x-icon" href="./imagens/Icone.png">
+
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="icone-logo" src="./imagens/LogoDeitado.png" alt="icone"></a>
+        <div class="conta">
+            <a href="faleConosco.html">
+                <a href="cadastro.html">
+                    <p>Criar conta</p>
+                </a>
+            </a>
+            <a href="cadastro.html"><button><b>Entrar</b></button></a>
+        </div>
+    </header>
+
+
+    <h3>Posso Ajudar?</h3>
+    <form action="#" id="formulario">
+        <div>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome">    
+        </div>
+        <div>
+            <label for="cpf">CPF - só os números</label><br>
+            <input type="text" class="form-control" maxlength="11">
+        </div>
+        <div>
+            <label for="e-mail">E-mail</label><br>
+            <input type="email" name="e-mail" id="email">
+
+        </div>
+        <div>
+            <label for="number">Número do Pedido (se houver)</label><br>
+            <input type="number" name="número do pedido" id="numPedido">
+
+        </div><br>
+        <button type="submit">Enviar</button>
+        <p>OBS: Os campos com * são de preenchimento obrigatório.</p>
+    </form>
+
+    <footer>
+        <div class="seach">
+            <input type="text" name="endereço" placeholder="Digite seu endereço aqui">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="fale-conosco">
+            <p>Servir bem, para servir sempre!</p>
+            <a href="./faleConosco.html">Fale Conosco</a>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.png" alt="Youtube"></a>
+        </div>
+    </footer>
+</body>
+</html>
+

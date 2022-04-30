@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100px;
+    background-color: #4e3223;
+}
+
+header img {
+    width: 290px;
+}
+
+.icone-logo{
+    height: 100%;
+    border-radius: 20px;
+}
+header .conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .conta p{
+    color: white;
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+header button {
+    color: white;
+    font-size: 10px;
+    background-color: #ad5323;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border-color: #51260e;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/*MAIN */
+
+.titulo{
+    padding: 20px;
+    text-align: center;
+}
+
+.banners-principais{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banners-principais a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banners-principais a>img{
+    border-radius: 40px;
+    width: 80%;
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.banners-principais a>img:hover{
+    width: 83%;
+}
+
+
+/* promocões*/
+#promocoes-geral{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #4d2a18;
+    column-gap: 5px;
+    row-gap: 5px;   
+}
+
+.card-Promocao{
+    height: 200px;
+    background-color: #ad5323;
+}
+
+.card-Promocao img {
+    height: 100%;
+    width: 100%;
+}
+
+/* SESSÃO MERCADO*/
+.sessao-mercado {
+    width: 90%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.img-card-sessao-mercado{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.img-card-sessao-mercado img{
+    width: 100%;
+}
+
+.card-sessao-produtos p {
+    color: black;
+    margin-top:5px ;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #ad5323;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    line-height: 2.0;
+}
+
+footer .fale-conosco {
+    color: black;
+    font-size: 12px;
+}
+
+footer input{
+    background-color: white;
+}
+
+.redes-sociais img {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.redes-sociais img:hover {
+    opacity: 100%;
+}
+
+@media (max-width:680px){
+    header .conta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .conta p{
+        font-size: 0.8rem;
+        margin: 7px;
+        font-weight: bold;
+    }
+
+    .banners-principais{
+        display: flex;
+        flex-direction: column;
+        height: 600px;   
+    }
+
+   #promocoes-geral{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #4d2a18;
+        column-gap: 5px;
+        row-gap: 5px;   
+    }
+
+    .sessao-mercado {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+        height: 500px;
+        justify-items:center ;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (max-width:480px){
+    header {
+        padding: 0px 10px;
+    }
+    
+    header img {
+        width: 200px;
+        height: 100%;
+        align-items: flex-start;
+    }
+    
+    .banners-principais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        height: auto;
+    }
+
+    .banners-principais a>img{
+        margin: 20px;
+    }
+
+    .banners-principais a>img:hover{
+        width: 80%;
+    }
+}

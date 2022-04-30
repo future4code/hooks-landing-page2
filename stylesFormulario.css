@@ -1,0 +1,99 @@
+form {
+    margin-left: 100px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+form p {
+    color: brown;
+    font-size: 10px;
+}
+
+form input {
+    width: 300px;
+}
+
+form label {
+    font-size: 15px;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+.cadastro{
+    margin: 0 auto;
+    padding: 30px;
+    width: 70vw;
+    text-align: center;
+    height: 400px;
+}
+
+#form-cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#form-cadastro input{
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+}
+
+.check-login{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.button-login{
+    width: 200px;
+    margin: 10px auto;
+
+}
+
+.entrar-com-rede-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container-img-redes{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-rede-socal{
+    width: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.img-rede-socal img{
+    width: 100%;
+}
+
+@media(max-width:380px){
+    form{
+        margin-left: 10px;
+    }
+
+    
+}
